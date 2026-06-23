@@ -6,7 +6,7 @@
     <title>هجمة مرتدة مصرية | مشروع التكافل الاستثماري المستدام</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstaic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -31,6 +31,10 @@
         body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
         .text-patriotic-gradient { background: linear-gradient(135deg, #ce1126 0%, #c09300 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .bg-patriotic-gradient { background: linear-gradient(135deg, #ce1126 0%, #a00e1e 100%); }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 12px; text-align: right; border-bottom: 1px solid #374151; }
+        th { background-color: #1f2937; font-weight: bold; }
+        tr:hover { background-color: #111827; }
     </style>
 </head>
 <body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col antialiased">
@@ -79,8 +83,8 @@
                     </div>
                 </div>
                 <div class="flex justify-center gap-3 flex-wrap">
-                    <a href="#simulator" class="bg-patriotic-gradient text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:scale-105 transition-transform">
-                        جرب المحاكي المالي 🧠
+                    <a href="#calculator" class="bg-patriotic-gradient text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:scale-105 transition-transform">
+                        حاسبة المشروع 📊
                     </a>
                     <a href="#vision" class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-xl font-bold shadow-lg transition-all border border-gray-700">
                         اعرف المزيد 📚
@@ -111,7 +115,7 @@
                                     <li>✓ أحدث تكنولوجيا البرمجة والذكاء الاصطناعي</li>
                                     <li>✓ الحفاظ الصارم على الهوية المصرية والعربية</li>
                                     <li>✓ عوائد مالية مرتفعة جداً</li>
-                                    <li>← تمول بقية المنظومة</li>
+                                    <li>← تدعم 1 مدرسة خيرية</li>
                                 </ul>
                             </div>
 
@@ -121,6 +125,7 @@
                                     <li>✓ تعليم ممتاز جداً يضاهي أرقى المدارس</li>
                                     <li>✓ بسعر التكلفة الفعلي فقط (بدون أرباح)</li>
                                     <li>✓ للطبقة المتوسطة</li>
+                                    <li>← تدعم نفسها (مستقلة)</li>
                                 </ul>
                             </div>
 
@@ -129,7 +134,7 @@
                                 <ul class="text-xs text-gray-300 space-y-1">
                                     <li>✓ بيئة تعليمية محترمة وتليق بكرامة أبنائنا</li>
                                     <li>✓ مجانية بالكامل أو برسوم رمزية جداً</li>
-                                    <li>✓ ممولة 100% من أرباح الفاخرة</li>
+                                    <li>✓ ممولة 100% من أرباح المدرسة الفاخرة</li>
                                 </ul>
                             </div>
                         </div>
@@ -146,7 +151,7 @@
                                     <li>✓ أحدث الأجهزة العالمية</li>
                                     <li>✓ أجنحة فندقية ملكية فاخرة</li>
                                     <li>✓ جذب السياحة العلاجية والعملة الصعبة</li>
-                                    <li>← أرباح ضخمة لتمويل باقي المنظومة</li>
+                                    <li>← تدعم 1 مستشفى خيري</li>
                                 </ul>
                             </div>
 
@@ -156,6 +161,7 @@
                                     <li>✓ خدمات طبية ممتازة (طوارئ، عمليات، رعاية)</li>
                                     <li>✓ بسعر التكلفة الفعلية (بدون ربح تجاري)</li>
                                     <li>✓ للموظفين والطبقة المتوسطة</li>
+                                    <li>← يدعم نفسه (مستقل)</li>
                                 </ul>
                             </div>
 
@@ -173,53 +179,149 @@
             </div>
         </section>
 
-        <!-- Interactive Simulator -->
-        <section id="simulator" class="py-20 max-w-7xl mx-auto px-4">
+        <!-- Calculator Section -->
+        <section id="calculator" class="py-20 max-w-7xl mx-auto px-4">
             <div class="text-center mb-12">
-                <h3 class="text-2xl md:text-4xl font-extrabold text-white mb-2">📊 المحاكي المالي التفاعلي</h3>
-                <p class="text-gray-400">حرك المؤشرات لترى كيف تغطي أرباح المشاريع الفاخرة تكاليف المدارس والمستشفيات المجانية!</p>
+                <h3 class="text-2xl md:text-4xl font-extrabold text-white mb-2">📊 حاسبة المشروع - دراسة الجدوى</h3>
+                <p class="text-gray-400">الحسابات الدقيقة والواضحة للمشروع</p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-3xl border border-gray-800 grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div class="space-y-6">
+
+            <!-- Input Controls -->
+            <div class="bg-gray-900 p-6 rounded-3xl border border-gray-800 mb-8">
+                <h4 class="text-xl font-bold text-egyptGold mb-6">🔧 ادخل البيانات:</h4>
+                <div class="grid md:grid-cols-3 gap-6">
                     <div>
-                        <div class="flex justify-between text-sm text-gray-300 mb-2">
-                            <label>عدد المجمعات الفاخرة (مدرسة + مستشفى فخم):</label>
-                            <span id="premium-val" class="bg-egyptGold text-gray-950 font-bold px-2 py-0.5 rounded text-xs">5 مجمعات</span>
-                        </div>
-                        <input id="premium-range" type="range" min="1" max="25" value="5" class="w-full accent-egyptGold cursor-pointer">
+                        <label class="text-sm text-gray-300 mb-2 block">عدد المدارس الفاخرة:</label>
+                        <input id="premium-schools" type="number" min="1" max="50" value="5" class="w-full bg-gray-800 border border-gray-700 text-white px-4 py-2 rounded-lg">
                     </div>
                     <div>
-                        <div class="flex justify-between text-sm text-gray-300 mb-2">
-                            <label>أرباح المجمع الفاخر الواحد سنوياً (مليون جنيه):</label>
-                            <span id="profit-val" class="bg-emerald-500 text-gray-950 font-bold px-2 py-0.5 rounded text-xs">80 مليون</span>
-                        </div>
-                        <input id="profit-range" type="range" min="20" max="200" step="10" value="80" class="w-full accent-emerald-500 cursor-pointer">
+                        <label class="text-sm text-gray-300 mb-2 block">عدد المستشفيات الفاخرة:</label>
+                        <input id="premium-hospitals" type="number" min="1" max="50" value="5" class="w-full bg-gray-800 border border-gray-700 text-white px-4 py-2 rounded-lg">
                     </div>
                     <div>
-                        <div class="flex justify-between text-sm text-gray-300 mb-2">
-                            <label>تشغيل المنشأة المجانية الواحدة سنوياً (مليون جنيه):</label>
-                            <span id="cost-val" class="bg-egyptRed text-white font-bold px-2 py-0.5 rounded text-xs">15 مليون</span>
-                        </div>
-                        <input id="cost-range" type="range" min="5" max="40" step="5" value="15" class="w-full accent-egyptRed cursor-pointer">
+                        <label class="text-sm text-gray-300 mb-2 block">الإيراد السنوي للمدرسة الفاخرة (مليون جنيه):</label>
+                        <input id="school-revenue" type="number" min="10" max="500" value="50" class="w-full bg-gray-800 border border-gray-700 text-white px-4 py-2 rounded-lg">
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-300 mb-2 block">الإيراد السنوي للمستشفى الفاخر (مليون جنيه):</label>
+                        <input id="hospital-revenue" type="number" min="50" max="1000" value="200" class="w-full bg-gray-800 border border-gray-700 text-white px-4 py-2 rounded-lg">
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-300 mb-2 block">نسبة الأرباح المخصصة للتمويل (%):</label>
+                        <input id="profit-percentage" type="number" min="10" max="100" value="50" class="w-full bg-gray-800 border border-gray-700 text-white px-4 py-2 rounded-lg">
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-300 mb-2 block">تكلفة تشغيل المدرسة الخيرية السنوية (مليون جنيه):</label>
+                        <input id="charity-school-cost" type="number" min="5" max="100" value="20" class="w-full bg-gray-800 border border-gray-700 text-white px-4 py-2 rounded-lg">
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-300 mb-2 block">تكلفة تشغيل المستشفى الخيري السنوية (مليون جنيه):</label>
+                        <input id="charity-hospital-cost" type="number" min="20" max="300" value="80" class="w-full bg-gray-800 border border-gray-700 text-white px-4 py-2 rounded-lg">
+                    </div>
+                    <div class="md:col-span-3">
+                        <button onclick="calculateResults()" class="w-full bg-patriotic-gradient text-white px-6 py-3 rounded-lg font-bold hover:scale-105 transition-transform">
+                            🧮 احسب النتائج
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Tables -->
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <!-- Education Results -->
+                <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800">
+                    <h4 class="text-lg font-bold text-blue-400 mb-4">🎓 قطاع التعليم</h4>
+                    <div class="overflow-x-auto">
+                        <table class="text-sm">
+                            <tr class="bg-blue-900/30">
+                                <th>البيان</th>
+                                <th>القيمة</th>
+                            </tr>
+                            <tr>
+                                <td>عدد المدارس الفاخرة</td>
+                                <td id="result-premium-schools" class="text-emerald-400 font-bold">5</td>
+                            </tr>
+                            <tr>
+                                <td>عدد المدارس الخيرية (مدعومة)</td>
+                                <td id="result-charity-schools" class="text-emerald-400 font-bold">5</td>
+                            </tr>
+                            <tr>
+                                <td>إجمالي الإيراد السنوي للفاخرة</td>
+                                <td id="result-school-total-revenue" class="text-yellow-400 font-bold">250 مليون</td>
+                            </tr>
+                            <tr>
+                                <td>الأرباح المخصصة للدعم</td>
+                                <td id="result-school-available-fund" class="text-emerald-400 font-bold">125 مليون</td>
+                            </tr>
+                            <tr>
+                                <td>تكلفة تشغيل المدارس الخيرية</td>
+                                <td id="result-school-total-cost" class="text-red-400 font-bold">100 مليون</td>
+                            </tr>
+                            <tr class="bg-green-900/30">
+                                <td class="font-bold">الفائض/العجز</td>
+                                <td id="result-school-surplus" class="text-green-400 font-bold">+25 مليون</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
 
-                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800 flex flex-col justify-center text-center">
-                    <p class="text-xs text-emerald-400 uppercase font-bold">القدرة الاستيعابية للمنظومة الخيرية المجانية 🚀</p>
-                    <div class="flex justify-center items-center gap-6 my-6">
-                        <div>
-                            <p id="supported-schools" class="text-4xl font-black text-white">13</p>
-                            <p class="text-xs text-gray-400">مدرسة مجانية</p>
-                        </div>
-                        <div class="text-gray-700 text-2xl">|</div>
-                        <div>
-                            <p id="supported-hospitals" class="text-4xl font-black text-white">13</p>
-                            <p class="text-xs text-gray-400">مستشفى مجاني</p>
-                        </div>
+                <!-- Health Results -->
+                <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800">
+                    <h4 class="text-lg font-bold text-green-400 mb-4">🏥 قطاع الصحة</h4>
+                    <div class="overflow-x-auto">
+                        <table class="text-sm">
+                            <tr class="bg-green-900/30">
+                                <th>البيان</th>
+                                <th>القيمة</th>
+                            </tr>
+                            <tr>
+                                <td>عدد المستشفيات الفاخرة</td>
+                                <td id="result-premium-hospitals" class="text-emerald-400 font-bold">5</td>
+                            </tr>
+                            <tr>
+                                <td>عدد المستشفيات الخيرية (مدعومة)</td>
+                                <td id="result-charity-hospitals" class="text-emerald-400 font-bold">5</td>
+                            </tr>
+                            <tr>
+                                <td>إجمالي الإيراد السنوي للفاخرة</td>
+                                <td id="result-hospital-total-revenue" class="text-yellow-400 font-bold">1,000 مليون</td>
+                            </tr>
+                            <tr>
+                                <td>الأرباح المخصصة للدعم</td>
+                                <td id="result-hospital-available-fund" class="text-emerald-400 font-bold">500 مليون</td>
+                            </tr>
+                            <tr>
+                                <td>تكلفة تشغيل المستشفيات الخيرية</td>
+                                <td id="result-hospital-total-cost" class="text-red-400 font-bold">400 مليون</td>
+                            </tr>
+                            <tr class="bg-green-900/30">
+                                <td class="font-bold">الفائض/العجز</td>
+                                <td id="result-hospital-surplus" class="text-green-400 font-bold">+100 مليون</td>
+                            </tr>
+                        </table>
                     </div>
-                    <p id="savings-calc" class="text-sm text-gray-300 bg-gray-900 p-3 rounded-xl border border-gray-800">
-                        توفير 200 مليون جنيه سنوياً من ميزانية الدولة!
-                    </p>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800">
+                <h4 class="text-lg font-bold text-egyptGold mb-4">📈 الملخص الإجمالي</h4>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <p class="text-gray-400 text-sm mb-2">إجمالي المنشآت الخيرية المدعومة</p>
+                        <p id="result-total-charity" class="text-4xl font-black text-emerald-400">10</p>
+                        <p class="text-xs text-gray-500 mt-2">(5 مدارس + 5 مستشفيات)</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <p class="text-gray-400 text-sm mb-2">إجمالي الأموال المتاحة للدعم</p>
+                        <p id="result-total-funds" class="text-4xl font-black text-yellow-400">625 مليون</p>
+                        <p class="text-xs text-gray-500 mt-2">سنوياً من الأرباح</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <p class="text-gray-400 text-sm mb-2">توفير من ميزانية الدولة</p>
+                        <p id="result-total-cost" class="text-4xl font-black text-green-400">500 مليون</p>
+                        <p class="text-xs text-gray-500 mt-2">سنوياً بدون عبء على الدولة</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -305,41 +407,61 @@
     </footer>
 
     <script>
-        // Financial Simulator
-        document.addEventListener('DOMContentLoaded', function() {
-            const pRange = document.getElementById('premium-range');
-            const pVal = document.getElementById('premium-val');
-            const prRange = document.getElementById('profit-range');
-            const prVal = document.getElementById('profit-val');
-            const cRange = document.getElementById('cost-range');
-            const cVal = document.getElementById('cost-val');
+        function calculateResults() {
+            // Get input values
+            const premiumSchools = parseInt(document.getElementById('premium-schools').value);
+            const premiumHospitals = parseInt(document.getElementById('premium-hospitals').value);
+            const schoolRevenue = parseInt(document.getElementById('school-revenue').value);
+            const hospitalRevenue = parseInt(document.getElementById('hospital-revenue').value);
+            const profitPercentage = parseInt(document.getElementById('profit-percentage').value);
+            const charitySchoolCost = parseInt(document.getElementById('charity-school-cost').value);
+            const charityHospitalCost = parseInt(document.getElementById('charity-hospital-cost').value);
 
-            const sSchools = document.getElementById('supported-schools');
-            const sHospitals = document.getElementById('supported-hospitals');
-            const savings = document.getElementById('savings-calc');
+            // Calculate Education Sector
+            const totalSchoolRevenue = premiumSchools * schoolRevenue;
+            const schoolFundsAvailable = totalSchoolRevenue * (profitPercentage / 100);
+            const charitySchoolsSupported = premiumSchools; // 1:1 ratio
+            const totalCharitySchoolCost = charitySchoolsSupported * charitySchoolCost;
+            const schoolSurplus = schoolFundsAvailable - totalCharitySchoolCost;
 
-            function calculate() {
-                const count = parseInt(pRange.value);
-                const profit = parseInt(prRange.value);
-                const cost = parseInt(cRange.value);
+            // Calculate Health Sector
+            const totalHospitalRevenue = premiumHospitals * hospitalRevenue;
+            const hospitalFundsAvailable = totalHospitalRevenue * (profitPercentage / 100);
+            const charityHospitalsSupported = premiumHospitals; // 1:1 ratio
+            const totalCharityHospitalCost = charityHospitalsSupported * charityHospitalCost;
+            const hospitalSurplus = hospitalFundsAvailable - totalCharityHospitalCost;
 
-                pVal.textContent = `${count} مجمع`;
-                prVal.textContent = `${profit} مليون`;
-                cVal.textContent = `${cost} مليون`;
+            // Calculate Totals
+            const totalCharityFacilities = charitySchoolsSupported + charityHospitalsSupported;
+            const totalFundsAvailable = schoolFundsAvailable + hospitalFundsAvailable;
+            const totalCharity CostNeeded = totalCharitySchoolCost + totalCharityHospitalCost;
 
-                const totalFund = (count * profit) * 0.5;
-                const facilityCount = Math.floor((totalFund / 2) / cost);
+            // Update Education Results
+            document.getElementById('result-premium-schools').textContent = premiumSchools;
+            document.getElementById('result-charity-schools').textContent = charitySchoolsSupported;
+            document.getElementById('result-school-total-revenue').textContent = totalSchoolRevenue.toLocaleString('ar-EG') + ' مليون';
+            document.getElementById('result-school-available-fund').textContent = schoolFundsAvailable.toLocaleString('ar-EG') + ' مليون';
+            document.getElementById('result-school-total-cost').textContent = totalCharitySchoolCost.toLocaleString('ar-EG') + ' مليون';
+            document.getElementById('result-school-surplus').textContent = (schoolSurplus >= 0 ? '+' : '') + schoolSurplus.toLocaleString('ar-EG') + ' مليون';
+            document.getElementById('result-school-surplus').className = schoolSurplus >= 0 ? 'text-green-400 font-bold' : 'text-red-400 font-bold';
 
-                sSchools.textContent = facilityCount;
-                sHospitals.textContent = facilityCount;
-                savings.textContent = `توفير حوالي ${totalFund.toFixed(0)} مليون جنيه سنوياً ذاتياً بالكامل!`;
-            }
+            // Update Health Results
+            document.getElementById('result-premium-hospitals').textContent = premiumHospitals;
+            document.getElementById('result-charity-hospitals').textContent = charityHospitalsSupported;
+            document.getElementById('result-hospital-total-revenue').textContent = totalHospitalRevenue.toLocaleString('ar-EG') + ' مليون';
+            document.getElementById('result-hospital-available-fund').textContent = hospitalFundsAvailable.toLocaleString('ar-EG') + ' مليون';
+            document.getElementById('result-hospital-total-cost').textContent = totalCharityHospitalCost.toLocaleString('ar-EG') + ' مليون';
+            document.getElementById('result-hospital-surplus').textContent = (hospitalSurplus >= 0 ? '+' : '') + hospitalSurplus.toLocaleString('ar-EG') + ' مليون';
+            document.getElementById('result-hospital-surplus').className = hospitalSurplus >= 0 ? 'text-green-400 font-bold' : 'text-red-400 font-bold';
 
-            pRange.addEventListener('input', calculate);
-            prRange.addEventListener('input', calculate);
-            cRange.addEventListener('input', calculate);
-            calculate();
-        });
+            // Update Summary
+            document.getElementById('result-total-charity').textContent = totalCharityFacilities;
+            document.getElementById('result-total-funds').textContent = totalFundsAvailable.toLocaleString('ar-EG') + ' مليون';
+            document.getElementById('result-total-cost').textContent = totalCharity CostNeeded.toLocaleString('ar-EG') + ' مليون';
+
+            // Scroll to results
+            document.querySelector('#calculator').scrollIntoView({ behavior: 'smooth' });
+        }
 
         // Social Share Functions
         function shareOnWhatsApp() {
@@ -357,6 +479,11 @@
             navigator.clipboard.writeText(window.location.href);
             alert('تم نسخ الرابط! ✅');
         }
+
+        // Auto-calculate on page load
+        window.addEventListener('load', function() {
+            calculateResults();
+        });
     </script>
 </body>
 </html>
